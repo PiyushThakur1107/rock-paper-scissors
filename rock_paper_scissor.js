@@ -71,3 +71,15 @@ choices.forEach((choice) => {
         playgame(userChoice);
     });
 });   
+
+const themeToggle = document.querySelector("#theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.innerText = "☀️ Light Mode";
+    } else {
+        themeToggle.innerText = "🌙 Dark Mode";
+    }
+});

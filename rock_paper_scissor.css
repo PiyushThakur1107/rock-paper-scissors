@@ -73,3 +73,35 @@ img{
     padding:1rem;
     border-radius: 2rem;
 }
+
+/* Dark mode */
+
+body {
+    background-color: white;
+    color: #081b31;
+}
+
+#theme-toggle {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #081b31;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .choice:hover {
+    background-color: white;
+}
